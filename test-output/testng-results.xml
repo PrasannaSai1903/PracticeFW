@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-15T17:09:26 IST" name="Suite" finished-at="2021-05-15T17:09:50 IST" duration-ms="24247">
+    <groups>
+    </groups>
+    <test started-at="2021-05-15T17:09:26 IST" name="Test" finished-at="2021-05-15T17:09:50 IST" duration-ms="24247">
+      <class name="com.pfw.tests.RegisterTest">
+        <test-method is-config="true" signature="befMthd()[pri:0, instance:com.pfw.tests.RegisterTest@5f9b2141]" started-at="2021-05-15T17:09:29 IST" name="befMthd" finished-at="2021-05-15T17:09:36 IST" duration-ms="7666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMthd -->
+        <test-method signature="RegisterDetails(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pfw.tests.RegisterTest@5f9b2141]" started-at="2021-05-15T17:09:36 IST" name="RegisterDetails" data-provider="getRegisVals" finished-at="2021-05-15T17:09:50 IST" duration-ms="13618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pfw.tests.RegisterTest.RegisterDetails(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PrasannaSai]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ambati]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Nellore]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[apksai9o@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[8056156423]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Cricket]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[English]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Unix]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[India%%Japan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterDetails -->
+      </class> <!-- com.pfw.tests.RegisterTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 27.855 s <<< FAILURE! - in TestSuite
+com.pfw.tests.RegisterTest.RegisterDetails[public void com.pfw.tests.RegisterTest.RegisterDetails(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String), PrasannaSai, Ambati, Nellore, apksai9o@gmail.com, 8056156423, Male, Cricket, English, Unix, India, India%%Japan](1)  Time elapsed: 5.104 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <select id="country" style="width:300px;" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">...</select> is not clickable at point (444, 597). Other element would receive the click: <form id="basicBootstrapForm" ng-submit="createdata()" class="form-horizontal ng-invalid ng-invalid-required ng-valid-minlength ng-dirty ng-valid-parse ng-valid-email ng-valid-pattern">...</form>
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'L440', ip: '192.168.0.110', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61329}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5ebbcfc9e8f3ab55a3e8aaa8299c1c4
+	at com.pfw.tests.RegisterTest.RegisterDetails(RegisterTest.java:54)
+
