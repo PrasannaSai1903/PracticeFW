@@ -52,6 +52,7 @@ public class RegisterTest extends BaseCla
 		regobj.fn_slctSkills(Skills);
 		regobj.fn_slctCountry(Country);
 		regobj.fn_slctMultiCountr(MultCountr);
+		logger.info("Details in Register Page was displayed ase expected");
 	}
 	
 	@DataProvider

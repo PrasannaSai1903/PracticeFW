@@ -21,12 +21,17 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.pfw.constants.Const;
 
 public class BaseCla 
 {
 	public Properties objprop;
 	public static WebDriver driver;
+	public static ExtentReports extent;
+	public ExtentTest logger;
+	
   public BaseCla()
   {
 	  try

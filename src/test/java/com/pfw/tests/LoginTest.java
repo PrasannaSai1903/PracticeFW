@@ -2,6 +2,7 @@ package com.pfw.tests;
 
 import java.lang.reflect.Method;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,8 +20,7 @@ public class LoginTest extends BaseCla
 	
 	public LoginTest()
 	{
-		super();
-		
+		super();                                                                		
 	}
 	
 	@BeforeMethod
@@ -37,7 +37,9 @@ public class LoginTest extends BaseCla
 	{
 		String strmail=exobj.getValue("LoginSuite",m.getName(), "Email");
 		mobj.fn_entertMail(strmail);
+		Assert.assertEquals(true, true);
 		regobj=mobj.fn_clickButton();
+		
 	}
 	
 	@AfterMethod

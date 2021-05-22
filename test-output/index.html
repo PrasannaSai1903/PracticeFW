@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.pfw.tests.RegisterTest" class="method navigator-link" hash-for-method="RegisterDetails(public void com.pfw.tests.RegisterTest.RegisterDetails(java.lang.reflect.Method,java.lang.String,jav...)">RegisterDetails(public void com.pfw.tests.RegisterTest.RegisterDetails(java.lang.reflect.Method,java.lang.String,jav...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +118,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.pfw.tests.RegisterTest" class="method navigator-link" hash-for-method="RegisterDetails(public void com.pfw.tests.RegisterTest.RegisterDetails(java.lang.reflect.Method,java.lang.String,jav...)">RegisterDetails(public void com.pfw.tests.RegisterTest.RegisterDetails(java.lang.reflect.Method,java.lang.String,jav...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.pfw.tests.LoginTest" class="method navigator-link" hash-for-method="EnterAccountAndClick(public void com.pfw.tests.LoginTest.EnterAccountAndClick(java.lang.reflect.Method))">EnterAccountAndClick(public void com.pfw.tests.LoginTest.EnterAccountAndClick(java.lang.reflect.Method))</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -119,9 +133,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.pfw.tests.RegisterTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -131,6 +145,44 @@
                   </a> <!-- RegisterDetails(public void com.pfw.tests.RegisterTest.RegisterDetails(java.lang.reflect.Method,java.lang.String,jav...) -->
                   <span class="method-name">RegisterDetails</span>
                   <span class="parameters">(public void com.pfw.tests.RegisterTest.RegisterDetails(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String), PrasannaSai, Ambati, Nellore, apksai9o@gmail.com, 8056156423, Male, Cricket, English, Unix, India, India%%Japan)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;select id=&quot;country&quot; style=&quot;width:300px;&quot; tabindex=&quot;-1&quot; class=&quot;select2-hidden-accessible&quot; aria-hidden=&quot;true&quot;&gt;...&lt;/select&gt; is not clickable at point (444, 597). Other element would receive the click: &lt;form id=&quot;basicBootstrapForm&quot; ng-submit=&quot;createdata()&quot; class=&quot;form-horizontal ng-invalid ng-invalid-required ng-valid-minlength ng-dirty ng-valid-parse ng-valid-email ng-valid-pattern&quot;&gt;...&lt;/form&gt;
+  (Session info: chrome=90.0.4430.212)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;L440&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa686dc2940f9aec2dca145c3ad14d8a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at com.pfw.pages.RegisterPage.fn_slctMultiCountr(RegisterPage.java:142)
+	at com.pfw.tests.RegisterTest.RegisterDetails(RegisterTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pfw.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EnterAccountAndClick(public void com.pfw.tests.LoginTest.EnterAccountAndClick(java.lang.reflect.Method))">
+                  </a> <!-- EnterAccountAndClick(public void com.pfw.tests.LoginTest.EnterAccountAndClick(java.lang.reflect.Method)) -->
+                  <span class="method-name">EnterAccountAndClick</span>
+                  <span class="parameters">(public void com.pfw.tests.LoginTest.EnterAccountAndClick(java.lang.reflect.Method))</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,8 +197,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.pfw.reports.Listen&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.pfw.tests.LoginTest&quot;/&gt;
       &lt;class name=&quot;com.pfw.tests.RegisterTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -161,7 +217,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,16 +243,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'RegisterDetails')
 data.setCell(0, 2, 'com.pfw.tests.RegisterTest')
-data.setCell(0, 3, 13618);
+data.setCell(0, 3, 9769);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'EnterAccountAndClick')
+data.setCell(1, 2, 'com.pfw.tests.LoginTest')
+data.setCell(1, 3, 8791);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -222,15 +282,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.pfw.tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.pfw.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">befMthd</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">RegisterDetails(public void com.pfw.tests.RegisterTest.RegisterDetails(java.lang.reflect.Method,java.lang.String,jav...)</span>
-                <span class="method-start">7668 ms</span>
+                <span class="method-name">EnterAccountAndClick(public void com.pfw.tests.LoginTest.EnterAccountAndClick(java.lang.reflect.Method))</span>
+                <span class="method-start">6428 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">aftMthd</span>
+                <span class="method-start">15281 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pfw.tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">befMthd</span>
+                <span class="method-start">16988 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RegisterDetails(public void com.pfw.tests.RegisterTest.RegisterDetails(java.lang.reflect.Method,java.lang.String,jav...)</span>
+                <span class="method-start">22051 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31835 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

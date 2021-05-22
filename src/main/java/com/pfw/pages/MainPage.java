@@ -29,7 +29,6 @@ public class MainPage extends BaseCla
 	public RegisterPage fn_clickButton()
 	{
 		eleButton.click();
-		System.out.println("Main Page");
 		return new RegisterPage();
 	}
 }
